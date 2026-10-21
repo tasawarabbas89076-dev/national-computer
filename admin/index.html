@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="refresh" content="0; url=login.html" />
+    <title>Redirecting to National Computer Admin...</title>
+    <script>
+      try {
+        const session = sessionStorage.getItem("nc_admin_auth");
+        if (session) {
+          const parsed = JSON.parse(session);
+          if (parsed && parsed.isAdmin) {
+            window.location.replace("dashboard.html");
+          } else {
+            window.location.replace("login.html");
+          }
+        } else {
+          window.location.replace("login.html");
+        }
+      } catch (e) {
+        window.location.replace("login.html");
+      }
+    </script>
+  </head>
+  <body style="font-family: sans-serif; display: flex; align-items: center; justify-content: center; height: 100vh; margin: 0; background: #0a192f; color: #00d2ff;">
+    <p>Redirecting to <a href="login.html" style="color: #00d2ff;">Admin Portal</a>...</p>
+  </body>
+</html>

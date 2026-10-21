@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manage Products — National Computer Admin</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2300d2ff'><path d='M20 4H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 12H4V6h16v10zM8 20h8v2H8z'/></svg>" />
+    <link rel="stylesheet" href="../css/admin.css" />
+  </head>
+  <body>
+    <div class="admin-layout">
+
+      <!-- Admin Sidebar -->
+      <aside class="admin-sidebar" id="admin-sidebar">
+        <div class="sidebar-header">
+          <div class="sidebar-logo-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+              <line x1="8" y1="21" x2="16" y2="21"></line>
+              <line x1="12" y1="17" x2="12" y2="21"></line>
+            </svg>
+          </div>
+          <div class="sidebar-logo-text">National <span>Admin</span></div>
+          <span class="sidebar-badge">Live</span>
+        </div>
+
+        <nav class="sidebar-nav">
+          <span class="sidebar-label">Overview</span>
+          <a href="dashboard.html" class="nav-item" data-page="dashboard">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="7" height="7"></rect>
+              <rect x="14" y="3" width="7" height="7"></rect>
+              <rect x="14" y="14" width="7" height="7"></rect>
+              <rect x="3" y="14" width="7" height="7"></rect>
+            </svg>
+            Dashboard
+          </a>
+
+          <span class="sidebar-label">Catalog Management</span>
+          <a href="products.html" class="nav-item active" data-page="products">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <path d="M16 10a4 4 0 0 1-8 0"></path>
+            </svg>
+            Manage Products
+          </a>
+          <a href="categories.html" class="nav-item" data-page="categories">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="8" y1="6" x2="21" y2="6"></line>
+              <line x1="8" y1="12" x2="21" y2="12"></line>
+              <line x1="8" y1="18" x2="21" y2="18"></line>
+              <line x1="3" y1="6" x2="3.01" y2="6"></line>
+              <line x1="3" y1="12" x2="3.01" y2="12"></line>
+              <line x1="3" y1="18" x2="3.01" y2="18"></line>
+            </svg>
+            Categories
+          </a>
+
+          <span class="sidebar-label">Services & Support</span>
+          <a href="services.html" class="nav-item" data-page="services">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+            </svg>
+            Manage Services
+          </a>
+
+          <span class="sidebar-label">Website Configuration</span>
+          <a href="settings.html" class="nav-item" data-page="settings">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="3"></circle>
+              <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+            </svg>
+            Website Content & Info
+          </a>
+        </nav>
+
+        <div class="sidebar-footer">
+          <div class="admin-user-info">
+            <div class="admin-avatar">AD</div>
+            <div class="admin-user-details">
+              <div class="admin-user-email admin-display-email">admin@nationalcomputer.com</div>
+              <div class="admin-user-role">Super Admin</div>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Main Content -->
+      <div class="admin-main">
+        <header class="admin-topbar">
+          <div class="topbar-left">
+            <button class="mobile-sidebar-toggle" id="mobile-sidebar-toggle" aria-label="Toggle Navigation Sidebar">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+              </svg>
+            </button>
+            <h1 class="topbar-title">Manage Products</h1>
+          </div>
+
+          <div class="topbar-right">
+            <button class="btn-admin btn-admin-primary" id="open-add-product-btn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+              </svg>
+              Add New Product
+            </button>
+            <button class="btn-logout" id="admin-logout-btn">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                <polyline points="16 17 21 12 16 7"></polyline>
+                <line x1="21" y1="12" x2="9" y2="12"></line>
+              </svg>
+              Logout
+            </button>
+          </div>
+        </header>
+
+        <main class="admin-content">
+          <!-- Filter & Search Toolbar -->
+          <div class="card-panel" style="padding: 1.25rem 1.5rem; margin-bottom: 1.5rem;">
+            <div style="display: flex; gap: 1rem; align-items: center; flex-wrap: wrap; justify-content: space-between;">
+              <div style="flex-grow: 1; max-width: 380px;">
+                <input 
+                  type="text" 
+                  id="admin-search-input" 
+                  class="form-input" 
+                  placeholder="Search products by model, category or description..." 
+                />
+              </div>
+
+              <div style="display: flex; gap: 0.75rem; align-items: center; flex-wrap: wrap;">
+                <select id="admin-category-filter" class="form-select" style="width: auto;">
+                  <option value="all">All Categories</option>
+                </select>
+
+                <select id="admin-status-filter" class="form-select" style="width: auto;">
+                  <option value="all">All Status</option>
+                  <option value="active">Active Only</option>
+                  <option value="inactive">Draft / Inactive</option>
+                  <option value="featured">Featured Only</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- Products Table -->
+          <div class="card-panel">
+            <div class="panel-header">
+              <div class="panel-title" id="products-table-count">Products Inventory</div>
+              <span style="font-size: 0.85rem; color: #64748b;">Live synchronized with Cloud Firestore</span>
+            </div>
+
+            <div class="table-responsive">
+              <table class="admin-table">
+                <thead>
+                  <tr>
+                    <th>Product</th>
+                    <th>Category</th>
+                    <th>Price (PKR)</th>
+                    <th>Visibility</th>
+                    <th>Featured</th>
+                    <th style="text-align: right;">Actions</th>
+                  </tr>
+                </thead>
+                <tbody id="products-table-tbody">
+                  <tr>
+                    <td colspan="6" style="text-align: center; padding: 2.5rem; color: #94a3b8;">
+                      Loading products...
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <!-- Add / Edit Product Modal -->
+    <div class="admin-modal-overlay" id="product-modal">
+      <div class="admin-modal">
+        <div class="admin-modal-header">
+          <h2 class="topbar-title" style="color: #ffffff; font-size: 1.15rem;" id="modal-heading">Add New Product</h2>
+          <button class="btn-icon" id="close-modal-btn" style="color: #ffffff; border-color: rgba(255,255,255,0.2);">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+
+        <form id="product-form">
+          <div class="admin-modal-body">
+            <input type="hidden" id="prod-id" />
+
+            <!-- Product Name -->
+            <div class="form-group">
+              <label for="prod-name" class="form-label">Product Name *</label>
+              <input type="text" id="prod-name" class="form-input" placeholder="e.g. Core i7 14th Gen Tower Workstation" required />
+            </div>
+
+            <!-- Category & Price in PKR -->
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label for="prod-category" class="form-label">Category *</label>
+                <select id="prod-category" class="form-select" required>
+                  <!-- Populated dynamically from categories -->
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="prod-price" class="form-label">Price & Currency *</label>
+                <div style="display: flex; gap: 0.5rem;">
+                  <input type="text" id="prod-currency" class="form-input" value="PKR" style="width: 75px; text-align: center; font-weight: 700;" readonly />
+                  <input type="text" id="prod-price" class="form-input" placeholder="e.g. 145,000 or PKR 145,000" required />
+                </div>
+                <div class="form-help">Enter sample price in PKR for public quotation.</div>
+              </div>
+            </div>
+
+            <!-- Description -->
+            <div class="form-group">
+              <label for="prod-desc" class="form-label">Product Description</label>
+              <textarea id="prod-desc" class="form-textarea" placeholder="Detailed specifications, warranty details, and components included..."></textarea>
+            </div>
+
+            <!-- Specs Chips (Comma separated) -->
+            <div class="form-group">
+              <label for="prod-specs" class="form-label">Technical Specs (Comma-separated)</label>
+              <input type="text" id="prod-specs" class="form-input" placeholder="e.g. Intel i7 14th Gen, 32GB RAM, 1TB NVMe, RTX 4070" />
+              <div class="form-help">Separate specification tags with commas.</div>
+            </div>
+
+            <!-- Image Handling (URL or File Upload) -->
+            <div class="form-group">
+              <label class="form-label">Product Image (URL or Upload Image File)</label>
+              <input type="url" id="prod-image-url" class="form-input" placeholder="https://images.unsplash.com/photo-..." />
+              
+              <div class="image-upload-box">
+                <img id="image-preview" class="image-preview-target" src="" alt="Preview" style="display: none;" />
+                <div style="flex-grow: 1;">
+                  <input type="file" id="prod-image-file" accept="image/png, image/jpeg, image/webp" class="form-input" style="padding: 0.4rem; font-size: 0.8rem;" />
+                  <div class="form-help">Supported: JPG, PNG, WEBP. Maximum file size: 2MB.</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Badge & Toggles -->
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label for="prod-badge" class="form-label">Badge Tag (Optional)</label>
+                <input type="text" id="prod-badge" class="form-input" placeholder="e.g. Best Seller, Top Choice, Discount" />
+              </div>
+
+              <div class="form-group" style="display: flex; flex-direction: column; justify-content: center; gap: 0.65rem;">
+                <label style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
+                  <input type="checkbox" id="prod-active" checked />
+                  <span style="font-weight: 600; font-size: 0.9rem;">Active / Available in Store</span>
+                </label>
+
+                <label style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
+                  <input type="checkbox" id="prod-featured" />
+                  <span style="font-weight: 600; font-size: 0.9rem; color: #b45309;">Featured on Homepage</span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="admin-modal-footer">
+            <button type="button" class="btn-admin btn-admin-secondary" id="cancel-modal-btn">Cancel</button>
+            <button type="submit" class="btn-admin btn-admin-primary" id="save-product-btn">Save Product</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script type="module" src="../js/admin-products.js"></script>
+  </body>
+</html>

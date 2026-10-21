@@ -1,0 +1,6 @@
+{
+  "name": "National Computer",
+  "description": "Premium computer shop, laptops, peripherals, accessories, and expert computer repair & IT services.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

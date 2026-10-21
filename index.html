@@ -1,0 +1,746 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>National Computer — Your Technology Partner | Desktops, Laptops & IT Repair</title>
+    <meta name="description" content="Premium computer shop, laptops, peripherals, accessories, and expert computer repair & IT services." />
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="National Computer" />
+    <meta property="og:description" content="Premium computer shop, laptops, peripherals, accessories, and expert computer repair & IT services." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1587202374463-8874a6866382?auto=format&fit=crop&w=1200&q=80" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Favicon & Stylesheets -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2300d2ff'><path d='M20 4H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 12H4V6h16v10zM8 20h8v2H8z'/></svg>" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- Structured Data (JSON-LD) for Local Business / Computer Store -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ComputerStore",
+      "name": "National Computer",
+      "image": "https://images.unsplash.com/photo-1587202374463-8874a6866382?auto=format&fit=crop&w=1200&q=80",
+      "telephone": "+92-306-6343757",
+      "email": "info@nationalcomputer-example.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "124 Tech Avenue, Silicon Plaza, Suite 400"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "opens": "09:00",
+          "closes": "20:00"
+        }
+      ]
+    }
+    </script>
+  </head>
+  <body>
+
+    <!-- Top Announcement Bar -->
+    <div class="announcement-bar">
+      <div class="container">
+        <div class="announcement-info">
+          <div class="announcement-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+            <span>Call / WhatsApp: <a href="tel:+923066343757" data-cfg="phone">0306-6343757</a></span>
+          </div>
+          <div class="announcement-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+            <span data-cfg="hours">Mon – Sat: 9:00 AM – 8:00 PM</span>
+          </div>
+        </div>
+        <div class="announcement-links">
+          <span>Genuine Products • Certified Tech Repair • Fast Turnaround</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header & Navigation -->
+    <header class="site-header">
+      <div class="container">
+        <nav class="navbar" aria-label="Main Navigation">
+          <!-- Logo -->
+          <a href="index.html" class="brand-logo" aria-label="National Computer Homepage">
+            <div class="brand-logo-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+            <div class="brand-text">National <span>Computer</span></div>
+          </a>
+
+          <!-- Nav Menu -->
+          <ul class="nav-menu" id="nav-menu">
+            <li><a href="index.html" class="nav-link active">Home</a></li>
+            <li><a href="products.html" class="nav-link">Products & Services</a></li>
+            <li><a href="products.html#services" class="nav-link">Repairs & Support</a></li>
+            <li><a href="products.html#contact" class="nav-link">Contact</a></li>
+            <li><a href="admin/login.html" class="nav-link" style="color: #00d2ff; font-weight: 700;">Admin Panel</a></li>
+          </ul>
+
+          <!-- Actions -->
+          <div class="header-actions">
+            <a href="admin/login.html" class="btn btn-secondary btn-sm" style="border-color: rgba(0,210,255,0.4); color: #00d2ff; display: inline-flex; align-items: center; gap: 0.35rem;">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+              </svg>
+              Admin
+            </a>
+            <a href="products.html#contact" class="btn btn-primary btn-sm">Contact Us</a>
+            <button class="mobile-menu-btn" id="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+              </svg>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <div class="container">
+          <div class="hero-grid">
+            <div class="hero-content">
+              <span class="badge badge-cyan">Certified Computer Sales & Technical Solutions</span>
+              <h1 class="hero-title">
+                Your Technology Partner — <span class="highlight">National Computer</span>
+              </h1>
+              <p class="hero-description">
+                Empowering individuals and businesses with top-tier laptops, desktop workstations, premium peripherals, and dependable hardware repair services. Built on technical excellence and customer trust.
+              </p>
+              
+              <div class="hero-cta-group">
+                <a href="products.html" class="btn btn-primary btn-lg">
+                  Explore Products
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </a>
+                <a href="products.html#services" class="btn btn-secondary btn-lg">
+                  Repair & Support
+                </a>
+              </div>
+
+              <div class="hero-stats">
+                <div class="hero-stat-item">
+                  <div class="hero-stat-number">15+</div>
+                  <div class="hero-stat-label">Years of Experience</div>
+                </div>
+                <div class="hero-stat-item">
+                  <div class="hero-stat-number">10k+</div>
+                  <div class="hero-stat-label">Satisfied Clients</div>
+                </div>
+                <div class="hero-stat-item">
+                  <div class="hero-stat-number">100%</div>
+                  <div class="hero-stat-label">Genuine Components</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero-visual">
+              <div class="hero-card">
+                <img 
+                  src="https://images.unsplash.com/photo-1593642632823-8f785ba67e45?auto=format&fit=crop&w=800&q=80" 
+                  alt="Modern high performance computer workspace at National Computer" 
+                  class="hero-image"
+                />
+                <div class="hero-floating-badge">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                  </svg>
+                  <div>
+                    <div>Warranty Assured</div>
+                    <small style="color: #64748b; font-weight: 500;">Guaranteed Authenticity</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Product Categories -->
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">Product Catalog</span>
+            <h2 class="section-title">Explore by Category</h2>
+            <p class="section-subtitle">Browse through our extensive selection of desktop workstations, ultrabooks, gaming gear, and essential office hardware.</p>
+          </div>
+
+          <div class="category-grid">
+            <!-- 1. Desktops -->
+            <a href="products.html?category=desktops" class="category-card">
+              <div class="category-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+              <h3 class="category-title">Desktop Computers</h3>
+              <span class="category-count">Workstations & Gaming</span>
+            </a>
+
+            <!-- 2. Laptops -->
+            <a href="products.html?category=laptops" class="category-card">
+              <div class="category-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="4" width="18" height="12" rx="2"></rect>
+                  <path d="M2 20h20"></path>
+                </svg>
+              </div>
+              <h3 class="category-title">Laptops</h3>
+              <span class="category-count">Business & Ultrabooks</span>
+            </a>
+
+            <!-- 3. Monitors -->
+            <a href="products.html?category=monitors" class="category-card">
+              <div class="category-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="3" width="20" height="14" rx="2"></rect>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                </svg>
+              </div>
+              <h3 class="category-title">Monitors</h3>
+              <span class="category-count">4K, Curved & Gaming</span>
+            </a>
+
+            <!-- 4. Keyboards -->
+            <a href="products.html?category=keyboards" class="category-card">
+              <div class="category-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                  <line x1="6" y1="8" x2="6" y2="8.01"></line>
+                  <line x1="10" y1="8" x2="10" y2="8.01"></line>
+                  <line x1="14" y1="8" x2="14" y2="8.01"></line>
+                  <line x1="18" y1="8" x2="18" y2="8.01"></line>
+                  <line x1="6" y1="12" x2="18" y2="12"></line>
+                </svg>
+              </div>
+              <h3 class="category-title">Keyboards</h3>
+              <span class="category-count">Mechanical & Wireless</span>
+            </a>
+
+            <!-- 5. Mouse -->
+            <a href="products.html?category=mouse" class="category-card">
+              <div class="category-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="5" y="2" width="14" height="20" rx="7"></rect>
+                  <line x1="12" y1="6" x2="12" y2="10"></line>
+                </svg>
+              </div>
+              <h3 class="category-title">Mouse</h3>
+              <span class="category-count">Ergonomic & Gaming</span>
+            </a>
+
+            <!-- 6. Printers -->
+            <a href="products.html?category=printers" class="category-card">
+              <div class="category-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="6 9 6 2 18 2 18 9"></polyline>
+                  <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+                  <rect x="6" y="14" width="12" height="8"></rect>
+                </svg>
+              </div>
+              <h3 class="category-title">Printers</h3>
+              <span class="category-count">Laser, Tank & Duplex</span>
+            </a>
+
+            <!-- 7. Accessories -->
+            <a href="products.html?category=accessories" class="category-card">
+              <div class="category-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                  <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                  <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                </svg>
+              </div>
+              <h3 class="category-title">Accessories</h3>
+              <span class="category-count">SSDs, Docks & Cables</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Our Services -->
+      <section class="section section-alt" id="services">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">Technical Solutions</span>
+            <h2 class="section-title">Our Professional Services</h2>
+            <p class="section-subtitle">From quick diagnostic troubleshooting to complete enterprise hardware deployments, our technicians deliver precision and reliability.</p>
+          </div>
+
+          <div class="services-grid">
+            <!-- 1. Computer Repair -->
+            <div class="service-card">
+              <div class="service-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                </svg>
+              </div>
+              <h3 class="service-title">Computer Repair</h3>
+              <p class="service-description">Full hardware diagnostics, power supply troubleshooting, overheating resolution, and motherboard repair for all desktop PCs.</p>
+              <ul class="service-features">
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  Free comprehensive diagnostic check
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  Thermal paste re-application & cleaning
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  Power supply & motherboard component fixes
+                </li>
+              </ul>
+              <div class="service-footer">
+                <span class="service-turnaround">Turnaround: 24 - 48 Hours</span>
+                <a href="products.html#contact" class="btn btn-outline btn-sm">Book Service</a>
+              </div>
+            </div>
+
+            <!-- 2. Laptop Repair -->
+            <div class="service-card">
+              <div class="service-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="4" width="18" height="12" rx="2"></rect>
+                  <path d="M2 20h20"></path>
+                </svg>
+              </div>
+              <h3 class="service-title">Laptop Repair</h3>
+              <p class="service-description">Broken screen replacements, faulty keyboard fixes, battery degradation, charging port repairs, and water damage remediation.</p>
+              <ul class="service-features">
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  Original OEM display panel replacement
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  Battery health check & cell replacement
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  Hinge and body casing restorations
+                </li>
+              </ul>
+              <div class="service-footer">
+                <span class="service-turnaround">Turnaround: Same Day / 24 Hours</span>
+                <a href="products.html#contact" class="btn btn-outline btn-sm">Book Service</a>
+              </div>
+            </div>
+
+            <!-- 3. Windows Installation -->
+            <div class="service-card">
+              <div class="service-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="3" width="8" height="8"></rect>
+                  <rect x="13" y="3" width="8" height="8"></rect>
+                  <rect x="3" y="13" width="8" height="8"></rect>
+                  <rect x="13" y="13" width="8" height="8"></rect>
+                </svg>
+              </div>
+              <h3 class="service-title">Windows Installation</h3>
+              <p class="service-description">Official Windows 10 & 11 clean installations, license activation, partition management, and critical security patch setup.</p>
+              <ul class="service-features">
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  Clean OS installation with driver updates
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  Data backup before system reinstallation
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  Performance tuning & bloatware removal
+                </li>
+              </ul>
+              <div class="service-footer">
+                <span class="service-turnaround">Turnaround: 2 - 4 Hours</span>
+                <a href="products.html#contact" class="btn btn-outline btn-sm">Book Service</a>
+              </div>
+            </div>
+
+            <!-- 4. Software Installation -->
+            <div class="service-card">
+              <div class="service-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                </svg>
+              </div>
+              <h3 class="service-title">Software & Antivirus Setup</h3>
+              <p class="service-description">Productivity suite deployment, creative software setup, malware elimination, and proactive system security configuration.</p>
+              <ul class="service-features">
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  Deep malware, spyware & virus removal
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  Office suites, graphics tools & CAD setup
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  Cloud backup configuration
+                </li>
+              </ul>
+              <div class="service-footer">
+                <span class="service-turnaround">Turnaround: Same Day</span>
+                <a href="products.html#contact" class="btn btn-outline btn-sm">Book Service</a>
+              </div>
+            </div>
+
+            <!-- 5. Hardware Upgrades -->
+            <div class="service-card">
+              <div class="service-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="12" y1="1" x2="12" y2="23"></line>
+                  <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                </svg>
+              </div>
+              <h3 class="service-title">Hardware Upgrades</h3>
+              <p class="service-description">Transform sluggish systems with high-speed NVMe SSD drives, DDR4/DDR5 RAM expansions, modern graphics cards, and quiet cooling.</p>
+              <ul class="service-features">
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  HDD to lightning SSD cloning (zero data loss)
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  RAM memory upgrades for heavy multitasking
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  GPU and power supply unit (PSU) installation
+                </li>
+              </ul>
+              <div class="service-footer">
+                <span class="service-turnaround">Turnaround: 1 - 2 Hours</span>
+                <a href="products.html#contact" class="btn btn-outline btn-sm">Book Service</a>
+              </div>
+            </div>
+
+            <!-- 6. IT Support -->
+            <div class="service-card">
+              <div class="service-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                  <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                </svg>
+              </div>
+              <h3 class="service-title">IT Support & Networking</h3>
+              <p class="service-description">On-site and remote technical assistance for small businesses, home offices, local networking, router configuration, and shared storage.</p>
+              <ul class="service-features">
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  Office network and Wi-Fi mesh setup
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  Printer sharing & NAS storage setup
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  Remote desktop troubleshooting support
+                </li>
+              </ul>
+              <div class="service-footer">
+                <span class="service-turnaround">Turnaround: Immediate / Scheduled</span>
+                <a href="products.html#contact" class="btn btn-outline btn-sm">Book Service</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Why Choose Us -->
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">The National Computer Advantage</span>
+            <h2 class="section-title">Why Choose Us</h2>
+            <p class="section-subtitle">We combine technical expertise, genuine sourcing, and dedicated customer care to provide seamless tech experiences.</p>
+          </div>
+
+          <div class="why-us-grid">
+            <div class="why-card">
+              <div class="why-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                </svg>
+              </div>
+              <h3 class="why-title">Quality Products</h3>
+              <p class="why-text">We strictly source genuine, brand-certified laptops, components, and accessories with verified factory warranties.</p>
+            </div>
+
+            <div class="why-card">
+              <div class="why-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 14 14"></polyline>
+                </svg>
+              </div>
+              <h3 class="why-title">Reliable Service</h3>
+              <p class="why-text">Quick turnaround times, transparent upfront pricing, and zero hidden costs on all diagnostics and repair work.</p>
+            </div>
+
+            <div class="why-card">
+              <div class="why-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+              </div>
+              <h3 class="why-title">Expert Support</h3>
+              <p class="why-text">Experienced hardware and software technicians ready to guide you on specifications, repairs, and upgrade paths.</p>
+            </div>
+
+            <div class="why-card">
+              <div class="why-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path>
+                </svg>
+              </div>
+              <h3 class="why-title">Customer Satisfaction</h3>
+              <p class="why-text">Hundreds of 5-star customer reviews across the region. We ensure you leave with hardware running at peak performance.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Featured Products -->
+      <section class="section section-alt">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">Handpicked Selection</span>
+            <h2 class="section-title">Featured Products</h2>
+            <p class="section-subtitle">Check out our top recommendations for workstation builds, ultrabooks, displays, and printing equipment.</p>
+          </div>
+
+          <!-- 4 Featured Cards dynamically populated or rendered via JS -->
+          <div class="products-grid" id="featured-products-container">
+            <!-- Fallback static rendering for zero-JS crawlability -->
+            <article class="product-card">
+              <div class="product-image-wrap">
+                <div class="product-badge-wrap">
+                  <span class="badge badge-cyan">Desktops</span>
+                  <span class="badge badge-success">Best Seller</span>
+                </div>
+                <img 
+                  src="https://images.unsplash.com/photo-1587202374463-8874a6866382?auto=format&fit=crop&w=700&q=80" 
+                  alt="National Pro Tower Workstation" 
+                  class="product-img"
+                />
+              </div>
+              <div class="product-info">
+                <span class="product-category-label">Desktop Computers</span>
+                <h3 class="product-title">National Pro Tower Workstation</h3>
+                <p class="product-desc">High-performance desktop for creative pros, 3D rendering, and multitasking.</p>
+                <div class="product-price-row">
+                  <div class="price-container">
+                    <span class="price-label">Sample Price</span>
+                    <span class="price-value">$1,499.00</span>
+                  </div>
+                </div>
+                <div class="product-actions">
+                  <a href="products.html" class="btn btn-outline btn-sm">View Details</a>
+                  <a href="products.html#contact" class="btn btn-whatsapp btn-sm">Inquire</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div style="text-align: center; margin-top: 3rem;">
+            <a href="products.html" class="btn btn-primary btn-lg">
+              View All Products & Services
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Call To Action (CTA) -->
+      <section class="cta-section">
+        <div class="container">
+          <div class="cta-box">
+            <div class="cta-content">
+              <h2 class="cta-title">Need a Computer or Technical Support? Contact Us Today.</h2>
+              <p class="cta-text">
+                Speak directly with our technical advisors to find the perfect computer setup or schedule a hardware diagnostic.
+              </p>
+            </div>
+            <div class="cta-buttons">
+              <a href="tel:+923066343757" class="btn btn-primary btn-lg" data-cfg="phone">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+                Call +92 306 6343757
+              </a>
+              <a href="https://wa.me/923066343757" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-lg whatsapp-link">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M17.472 14.382c-.301-.15-1.782-.879-2.058-.98-.276-.1-.477-.15-.678.15-.2.301-.778.98-.954 1.181-.176.2-.352.226-.653.075-.301-.15-1.272-.469-2.423-1.496-.896-.799-1.501-1.787-1.677-2.088-.176-.301-.019-.464.132-.614.135-.135.301-.352.452-.527.15-.176.201-.301.301-.502.1-.2.05-.377-.025-.527-.075-.15-.678-1.635-.929-2.239-.244-.588-.493-.508-.678-.518-.176-.01-.377-.01-.578-.01-.2 0-.527.075-.803.377-.276.301-1.055 1.03-1.055 2.511 0 1.481 1.08 2.91 1.231 3.111.15.2 2.125 3.245 5.148 4.551.719.311 1.28.497 1.718.636.722.23 1.378.197 1.9.119.582-.088 1.782-.728 2.033-1.431.251-.703.251-1.305.176-1.431-.075-.126-.276-.201-.578-.352z"/>
+                </svg>
+                Chat on WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <div class="brand-logo">
+              <div class="brand-logo-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+              <div class="brand-text">National <span>Computer</span></div>
+            </div>
+            <p class="footer-brand-desc">
+              Your one-stop destination for business and personal computing hardware, accessories, professional diagnostics, and technical support.
+            </p>
+          </div>
+
+          <div>
+            <h4 class="footer-title">Navigation</h4>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="products.html">Products & Services</a></li>
+              <li><a href="products.html?category=desktops">Desktop Computers</a></li>
+              <li><a href="products.html?category=laptops">Laptops & Notebooks</a></li>
+              <li><a href="products.html#contact">Get in Touch</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="footer-title">Services</h4>
+            <ul class="footer-links">
+              <li><a href="products.html#services">Computer Repair</a></li>
+              <li><a href="products.html#services">Laptop Screen & Battery</a></li>
+              <li><a href="products.html#services">Windows & OS Setup</a></li>
+              <li><a href="products.html#services">Hardware & SSD Upgrades</a></li>
+              <li><a href="products.html#services">Business IT Support</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="footer-title">Contact Information</h4>
+            <div class="footer-contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span data-cfg="address">124 Tech Avenue, Silicon Plaza, Suite 400</span>
+            </div>
+            <div class="footer-contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+              <a href="tel:+923066343757" data-cfg="phone">+92 306 6343757</a>
+            </div>
+            <div class="footer-contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <a href="mailto:info@nationalcomputer-example.com" data-cfg="email">info@nationalcomputer-example.com</a>
+            </div>
+            <div class="footer-contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+              <span data-cfg="hours">Mon – Sat: 9:00 AM – 8:00 PM</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 National Computer. All rights reserved. Professional Computer Sales & Repair Services.</p>
+          <div>
+            <a href="products.html">Catalog</a> • <a href="products.html#services">Services</a> • <a href="products.html#contact">Contact</a> • <a href="admin/login.html" style="color: #64748b;">Admin Portal</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Floating WhatsApp Quick Action Button -->
+    <a href="https://wa.me/923066343757" class="whatsapp-floating whatsapp-link" aria-label="Chat with National Computer on WhatsApp">
+      <svg viewBox="0 0 24 24" fill="currentColor">
+        <path d="M17.472 14.382c-.301-.15-1.782-.879-2.058-.98-.276-.1-.477-.15-.678.15-.2.301-.778.98-.954 1.181-.176.2-.352.226-.653.075-.301-.15-1.272-.469-2.423-1.496-.896-.799-1.501-1.787-1.677-2.088-.176-.301-.019-.464.132-.614.135-.135.301-.352.452-.527.15-.176.201-.301.301-.502.1-.2.05-.377-.025-.527-.075-.15-.678-1.635-.929-2.239-.244-.588-.493-.508-.678-.518-.176-.01-.377-.01-.578-.01-.2 0-.527.075-.803.377-.276.301-1.055 1.03-1.055 2.511 0 1.481 1.08 2.91 1.231 3.111.15.2 2.125 3.245 5.148 4.551.719.311 1.28.497 1.718.636.722.23 1.378.197 1.9.119.582-.088 1.782-.728 2.033-1.431.251-.703.251-1.305.176-1.431-.075-.126-.276-.201-.578-.352z"/>
+      </svg>
+    </a>
+
+    <!-- Quick Inquiry Modal -->
+    <div class="modal-overlay" id="inquiry-modal" role="dialog" aria-modal="true" aria-labelledby="modal-product-title">
+      <div class="modal-card">
+        <div class="modal-header">
+          <div class="modal-title">Product Inquiry</div>
+          <button class="modal-close-btn" id="modal-close-btn" aria-label="Close dialog">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h3 id="modal-product-title" style="font-size: 1.2rem; font-weight: 700; color: #0a192f; margin-bottom: 0.35rem;">Product Name</h3>
+          <div id="modal-product-price" style="font-size: 1.1rem; font-weight: 800; color: #0284c7; margin-bottom: 0.75rem;">$0.00</div>
+          <p id="modal-product-desc" style="font-size: 0.9rem; color: #64748b; margin-bottom: 1.5rem; line-height: 1.5;">Product description</p>
+
+          <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+            <a href="https://wa.me/923066343757" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" id="modal-whatsapp-btn" style="width: 100%; text-decoration: none; justify-content: center;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M17.472 14.382c-.301-.15-1.782-.879-2.058-.98-.276-.1-.477-.15-.678.15-.2.301-.778.98-.954 1.181-.176.2-.352.226-.653.075-.301-.15-1.272-.469-2.423-1.496-.896-.799-1.501-1.787-1.677-2.088-.176-.301-.019-.464.132-.614.135-.135.301-.352.452-.527.15-.176.201-.301.301-.502.1-.2.05-.377-.025-.527-.075-.15-.678-1.635-.929-2.239-.244-.588-.493-.508-.678-.518-.176-.01-.377-.01-.578-.01-.2 0-.527.075-.803.377-.276.301-1.055 1.03-1.055 2.511 0 1.481 1.08 2.91 1.231 3.111.15.2 2.125 3.245 5.148 4.551.719.311 1.28.497 1.718.636.722.23 1.378.197 1.9.119.582-.088 1.782-.728 2.033-1.431.251-.703.251-1.305.176-1.431-.075-.126-.276-.201-.578-.352z"/>
+              </svg>
+              Chat on WhatsApp for Availability & Quote
+            </a>
+            <a href="products.html#contact" class="btn btn-secondary" style="background: #f1f5f9; color: #0a192f; border: 1px solid #cbd5e1; width: 100%; text-align: center;">
+              Send Message via Contact Form
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script type="module" src="./js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,101 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Global Safety Net: Default Deny
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // Helper functions
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isValidId(id) {
+      return id is string && id.size() > 0 && id.size() <= 128 && id.matches('^[a-zA-Z0-9_\\-]+$');
+    }
+
+    // Admin authentication check:
+    // Authorized if UID document exists in /admins/ OR email matches bootstrapped administrator
+    function isAdmin() {
+      return isSignedIn() && (
+        exists(/databases/$(database)/documents/admins/$(request.auth.uid)) ||
+        (request.auth.token.email == 'tasawarabbas89076@gmail.com')
+      );
+    }
+
+    // Product schema validation
+    function isValidProduct(data) {
+      return data is map &&
+        data.name is string && data.name.size() > 0 && data.name.size() <= 200 &&
+        data.category is string && data.category.size() > 0 && data.category.size() <= 100 &&
+        data.price is string && data.price.size() > 0 && data.price.size() <= 50;
+    }
+
+    // Category schema validation
+    function isValidCategory(data) {
+      return data is map &&
+        data.name is string && data.name.size() > 0 && data.name.size() <= 100 &&
+        data.slug is string && data.slug.size() > 0 && data.slug.size() <= 100;
+    }
+
+    // Service schema validation
+    function isValidService(data) {
+      return data is map &&
+        data.title is string && data.title.size() > 0 && data.title.size() <= 200 &&
+        data.description is string && data.description.size() <= 2000;
+    }
+
+    // Website Content schema validation
+    function isValidContent(data) {
+      return data is map &&
+        (!('heroTitle' in data) || (data.heroTitle is string && data.heroTitle.size() <= 300)) &&
+        (!('phone' in data) || (data.phone is string && data.phone.size() <= 50)) &&
+        (!('whatsappNumber' in data) || (data.whatsappNumber is string && data.whatsappNumber.size() <= 50));
+    }
+
+    // 1. Products Collection
+    match /products/{productId} {
+      allow read: if true; // Public catalog access
+      allow create: if isAdmin() && isValidId(productId) && isValidProduct(request.resource.data);
+      allow update: if isAdmin() && isValidId(productId) && isValidProduct(request.resource.data);
+      allow delete: if isAdmin() && isValidId(productId);
+    }
+
+    // 2. Categories Collection
+    match /categories/{categoryId} {
+      allow read: if true; // Public category access
+      allow create: if isAdmin() && isValidId(categoryId) && isValidCategory(request.resource.data);
+      allow update: if isAdmin() && isValidId(categoryId) && isValidCategory(request.resource.data);
+      allow delete: if isAdmin() && isValidId(categoryId);
+    }
+
+    // 3. Services Collection
+    match /services/{serviceId} {
+      allow read: if true; // Public service catalog access
+      allow create: if isAdmin() && isValidId(serviceId) && isValidService(request.resource.data);
+      allow update: if isAdmin() && isValidId(serviceId) && isValidService(request.resource.data);
+      allow delete: if isAdmin() && isValidId(serviceId);
+    }
+
+    // 4. Website Content Collection (General site settings, phone, hours, hero)
+    match /content/{contentId} {
+      allow read: if true; // Public website branding/contact info
+      allow create: if isAdmin() && isValidId(contentId) && isValidContent(request.resource.data);
+      allow update: if isAdmin() && isValidId(contentId) && isValidContent(request.resource.data);
+      allow delete: if isAdmin() && isValidId(contentId);
+    }
+
+    // 5. Admins Collection
+    match /admins/{adminId} {
+      allow read: if isAdmin();
+      allow write: if isAdmin() && isValidId(adminId);
+    }
+
+    // 6. Test connection health check
+    match /test/{testId} {
+      allow read: if true;
+    }
+  }
+}
